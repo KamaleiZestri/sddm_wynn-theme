@@ -1,5 +1,5 @@
 import QtQuick 2.7
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects
 import SddmComponents 2.0
 import QtQuick.Controls 2.0
 
@@ -286,12 +286,12 @@ Item {
             id: loginButton
             width: parent.width
             text: qsTr("LOG IN")
-            highlighted: true
-            background: Rectangle {
-                id: loginButtonBack
-                color: config.accent2
-                implicitHeight: 40
-            }
+            // highlighted: true
+            // background: Rectangle {
+            //     id: loginButtonBack
+            //     color: config.accent2
+            //     implicitHeight: 40
+            // }
 
             font.family: config.font
 

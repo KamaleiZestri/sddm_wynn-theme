@@ -1,7 +1,7 @@
 /***********************************************************************/
 
 import QtQuick 2.7
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects
 import SddmComponents 2.0
 import QtQuick.Controls 2.0
 
@@ -387,12 +387,12 @@ Rectangle {
             visible: config.primary_screen_only == "true" ? primaryScreen : true
             width: 200
             text: qsTr("Acceptable Use Policy")
-            highlighted: true
-            background: Rectangle {
-                id: aupButtonBack
-                color: config.accent2
-                implicitHeight: 40
-            }
+            // highlighted: true
+            // background: Rectangle {
+            //     id: aupButtonBack
+            //     color: config.accent2
+            //     implicitHeight: 40
+            // }
 
             font.family: config.font
 
